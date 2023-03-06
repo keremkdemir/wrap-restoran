@@ -27,6 +27,24 @@ html{
     scroll-behavior: smooth;
 }
 
+html::-webkit-scrollbar{
+    width: 0.8rem;
+    background-color: white;
+}
+
+
+html::-webkit-scrollbar-thumb{
+    border-radius: 3rem;
+    background-color: black;
+}
+
+html::-webkit-scrollbar-track{
+    border-radius: 3rem;
+    background-color: var(--button-color);
+}
+
+
+
 body{
     background-color: var(--main-color);
     height: 200vh;
@@ -46,9 +64,19 @@ section{
     color: white;
     background-color: var(--button-color);
 }
-
 .btn:hover{
     background-color: orange;
+}
+
+.heading{
+    
+    color: black;
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin-bottom: 3.5rem;
+    border-bottom: 0.1rem solid black;
+    
+
 }
 
 
@@ -124,10 +152,49 @@ section{
 .menu .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.menu .box-container .box{
+    padding: 3rem;
+    background-color: white;
+    border-radius: 3rem;
+    min-height: 60rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 
 .menu .box-container .box img{
-    width: 100%;
+    width: 30rem;
+    height: 25rem;
     object-fit: cover;
+}
+
+/* kendim ekledim */
+.menu .box-container .box .box-head .adana-durum{
+    
+    height: 90%;
+}
+
+.menu .box-container .box .menu-category {
+    font-size: 1.2rem;
+}
+
+.menu .box-container .box h3{
+    font-size: 3rem;
+    /* padding: 1rem; */
+}
+
+.menu .box-container .box .price{
+    font-size: 2.5rem;
+    padding: 0.5rem 0;
+}
+
+.menu .box-container .box .price span{
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    font-weight: 300;
 }
 /*MENU END*/
