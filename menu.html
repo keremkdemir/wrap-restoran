@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wrap-Menü</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- HEADER START -->
+    <header class="header">
+
+        <a href="#" class="logo">
+            <img src="images/wrap.png" alt="logo">
+        </a>
+
+        <nav class="navbar">
+            <a href="index.html">ANA SAYFA</a>
+            <a href="menu.html" class="active">MENÜ</a>
+            <a href="products.html">ÜRÜNLER</a>
+            <a href="about.html">HAKKIMIZDA</a>
+            <a href="review.html">YORUMLAR</a>
+            <a href="contact.html">İLETİŞİM</a>
+            <a href="blog.html">BLOG</a>
+        </nav>
+        
+        <div class="buttons">
+            <button id="search-btn">
+                <i class="bi bi-search"></i>
+            </button>
+            <button id="cart-btn">
+                <i class="bi bi-cart3"></i>
+            </button>
+            <button id="menu-btn">
+                <i class="bi bi-justify"></i>
+            </button>
+        </div>
+
+        <!--SEARCH START-->
+        <div class="search-form">
+            <input type="text" class="search-input" id="search-box" placeholder="Arama">
+            <i class="bi bi-search"></i>
+        </div>
+        <!--SEARCH END-->
+
+        <!-- CART START -->
+        <div class="cart-items-container">
+            <div class="cart-item">
+                <i class="bi bi-x-lg"></i>
+                <img src="images/karısık-sandvic.png" alt="sandviç">
+                <div class="content">
+                    <h3>ürün 1</h3>
+                    <div class="price">60₺/-</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <i class="bi bi-x-lg"></i>
+                <img src="images/et-durum.png" alt="durum">
+                <div class="content">
+                    <h3>ürün 2</h3>
+                    <div class="price">70₺/-</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <i class="bi bi-x-lg"></i>
+                <img src="images/taco.png" alt="taco">
+                <div class="content">
+                    <h3>ürün 3</h3>
+                    <div class="price">80₺/-</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <i class="bi bi-x-lg"></i>
+                <img class="et-search" src="images/yarım-ekmek.png" alt="doner">
+                <div class="content">
+                    <h3>ürün 4</h3>
+                    <div class="price">40₺/-</div>
+                </div>
+            </div>
+            
+            <a href="#" class="btn">Şimdi Sipariş Ver</a>
+        </div>
+        <!-- CART END -->
+    </header>
+    <!-- HEADER END-->
+
+    <!-- MENU START -->
+    <section class="menu">
+        <h1 class="heading"><span>Menümüz</span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="box-head">
+                    <img src="images/tavuk-durum.png" alt="menu">
+                    <span class="menu-category">DÜRÜM</span>
+                    <h3>Tavuk Döner Dürüm</h3>
+                    <div class="price">52₺<span>70₺</span></div>
+                </div> 
+                <div class="box-bottom">
+                    <a href="#" class="btn">Sepete Ekle</a>
+                </div>
+            </div>
+
+                <div class="box">
+                <div class="box-head">
+                    <img src="images/et-durum.png" alt="menu">
+                    <span class="menu-category">DÜRÜM</span>
+                    <h3>Et Döner Dürüm</h3>
+                    <div class="price">70₺<span>90₺</span></div>
+                </div>
+                <div class="box-bottom">
+                    <a href="#" class="btn">Sepete Ekle</a>
+                </div>
+            </div>
+
+                <div class="box">
+                <div class="box-head">
+                    <img class="hatay-usulu" src="images/hatay-usulu.png" alt="menu">
+                    <span class="menu-category">DÜRÜM</span>
+                    <h3>Hatay Dürüm</h3>
+                    <div class="price">90₺<span>120₺</span></div>
+                </div>
+                <div class="box-bottom">
+                    <a href="#" class="btn">Sepete Ekle</a>
+                </div>
+            </div>
+
+                <div class="box">
+                <div class="box-head">
+                    <img src="images/urfa.png" alt="menu">
+                    <span class="menu-category">DÜRÜM</span>
+                    <h3>Urfa Kebap Dürüm</h3>
+                    <div class="price">90₺<span>120₺</span></div>
+                </div>
+                <div class="box-bottom">
+                    <a href="#" class="btn">Sepete Ekle</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- MENU END -->
+
+    <!-- FOOTER START -->
+    <section class="footer">
+        <div class="search">
+            <input type="text" class="search-input" placeholder="Arama">
+            <button class="btn btn-primary">Ara</button>
+        </div>
+        <div class="share">
+                <ul class="social-icons">
+                    <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+                    <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+                    <li><a href="" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
+                    <li><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+                    <li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="" class="social-icon"> <i class="fa fa-github"></i></a></li>
+                </ul>
+        </div>
+        <div class="end">
+            <h3 class="hazirlayan">Kerem Karademir</h3>
+            <p> Bu proje Insider Code Academy 2023 için hazırlanmıştır.</p>
+            
+        </div>
+    </section>
+    <!-- FOOTER END -->
+
+    <!-- SCRİPT -->
+    <script src="js/script.js"></script>
+    <!-- SCRİPT -->
+
+</body>
+</html>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wrap-Restaurant</title>
+    <title>Wrap-Restoran</title>
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -13,24 +13,24 @@
     <header class="header">
 
         <a href="#" class="logo">
-            <img src="wrap.png" alt="logo">
+            <img src="images/wrap.png" alt="logo">
         </a>
 
         <nav class="navbar">
-            <a href="#" class="active">ANA SAYFA</a>
-            <a href="#">MENÜ</a>
-            <a href="#">ÜRÜNLER</a>
-            <a href="#">HAKKIMIZDA</a>
-            <a href="#">YORUMLAR</a>
-            <a href="#">İLETİŞİM</a>
-            <a href="#">BLOG</a>
+            <a href="index.html" class="active">ANA SAYFA</a>
+            <a href="menu.html">MENÜ</a>
+            <a href="products.html">ÜRÜNLER</a>
+            <a href="about.html">HAKKIMIZDA</a>
+            <a href="review.html">YORUMLAR</a>
+            <a href="contact.html">İLETİŞİM</a>
+            <a href="blog.html">BLOG</a>
         </nav>
         
         <div class="buttons">
-            <button>
+            <button id="search-btn">
                 <i class="bi bi-search"></i>
             </button>
-            <button>
+            <button id="cart-btn">
                 <i class="bi bi-cart3"></i>
             </button>
             <button id="menu-btn">
@@ -38,6 +38,51 @@
             </button>
         </div>
 
+        <!--SEARCH START-->
+        <div class="search-form">
+            <input type="text" class="search-input" id="search-box" placeholder="Arama">
+            <i class="bi bi-search"></i>
+        </div>
+        <!--SEARCH END-->
+
+        <!-- CART START -->
+        <div class="cart-items-container">
+            <div class="cart-item">
+                <i class="bi bi-x-lg"></i>
+                <img src="images/karısık-sandvic.png" alt="sandviç">
+                <div class="content">
+                    <h3>ürün 1</h3>
+                    <div class="price">60₺/-</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <i class="bi bi-x-lg"></i>
+                <img src="images/et-durum.png" alt="durum">
+                <div class="content">
+                    <h3>ürün 2</h3>
+                    <div class="price">70₺/-</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <i class="bi bi-x-lg"></i>
+                <img src="images/taco.png" alt="taco">
+                <div class="content">
+                    <h3>ürün 3</h3>
+                    <div class="price">80₺/-</div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <i class="bi bi-x-lg"></i>
+                <img class="et-search" src="images/yarım-ekmek.png" alt="doner">
+                <div class="content">
+                    <h3>ürün 4</h3>
+                    <div class="price">40₺/-</div>
+                </div>
+            </div>
+            
+            <a href="#" class="btn">Şimdi Sipariş Ver</a>
+        </div>
+        <!-- CART END -->
     </header>
     <!-- HEADER END-->
 
@@ -52,7 +97,6 @@
     <!-- HOME END -->
 
     <!-- MENU START -->
-
     <section class="menu">
         <h1 class="heading"><span>Menümüz</span></h1>
 
@@ -60,11 +104,11 @@
 
             <div class="box">
                 <div class="box-head">
-                    <img src="tavuk-durum.png" alt="menu">
+                    <img src="images/tavuk-durum.png" alt="menu">
                     <span class="menu-category">DÜRÜM</span>
                     <h3>Tavuk Döner Dürüm</h3>
                     <div class="price">52₺<span>70₺</span></div>
-                </div>
+                </div> 
                 <div class="box-bottom">
                     <a href="#" class="btn">Sepete Ekle</a>
                 </div>
@@ -72,7 +116,7 @@
 
                 <div class="box">
                 <div class="box-head">
-                    <img src="et-durum.png" alt="menu">
+                    <img src="images/et-durum.png" alt="menu">
                     <span class="menu-category">DÜRÜM</span>
                     <h3>Et Döner Dürüm</h3>
                     <div class="price">70₺<span>90₺</span></div>
@@ -84,7 +128,7 @@
 
                 <div class="box">
                 <div class="box-head">
-                    <img class="hatay-usulu" src="hatay-usulu.png" alt="menu">
+                    <img class="hatay-usulu" src="images/hatay-usulu.png" alt="menu">
                     <span class="menu-category">DÜRÜM</span>
                     <h3>Hatay Dürüm</h3>
                     <div class="price">90₺<span>120₺</span></div>
@@ -96,7 +140,7 @@
 
                 <div class="box">
                 <div class="box-head">
-                    <img src="urfa.png" alt="menu">
+                    <img src="images/urfa.png" alt="menu">
                     <span class="menu-category">DÜRÜM</span>
                     <h3>Urfa Kebap Dürüm</h3>
                     <div class="price">90₺<span>120₺</span></div>
@@ -111,7 +155,6 @@
     <!-- MENU END -->
 
     <!-- PRODUCTS START-->
-
     <section class="products">
         <h1 class="heading">Ürünler</h1>
         <div class="box-container">
@@ -122,7 +165,7 @@
                     <a href="#" class="name">Yarım Ekmek Döner</a>
                 </div>
                 <div class="image">
-                    <img class="yarim-ekmek" src="yarım-ekmek.png" alt="">
+                    <img class="yarim-ekmek" src="images/yarım-ekmek.png" alt="">
                 </div>
                 <div class="box-bottom">
                     <div class="info">
@@ -143,7 +186,7 @@
                     <a href="#" class="name">Taco</a>
                 </div>
                 <div class="image">
-                    <img class="taco" src="taco.png" alt="">
+                    <img class="taco" src="images/taco.png" alt="">
                 </div>
                 <div class="box-bottom">
                     <div class="info">
@@ -164,7 +207,7 @@
                     <a href="#" class="name">Karışık Sandviç</a>
                 </div>
                 <div class="image">
-                    <img class="karısık-sandvic" src="karısık-sandvic.png" alt="">
+                    <img class="karısık-sandvic" src="images/karısık-sandvic.png" alt="">
                 </div>
                 <div class="box-bottom">
                     <div class="info">
@@ -184,12 +227,11 @@
     <!-- PRODUCTS END-->
 
     <!-- ABOUT START -->
-
     <section class="about">
         <h1 class="heading">HAKKIMIZDA</h1>
         <div class="row">
             <div class="image">
-                <img src="deneme.jpg" alt="about">
+                <img src="images/aboutus.jpg" alt="about">
             </div>
             <div class="content">
                 <h3>Dürümlerimiz Neden Bu Kadar Çok Seviliyor?</h3>
@@ -209,16 +251,15 @@
     <!-- ABOUT END -->
 
     <!-- REWİEW START -->
-
     <section class="review">
         <h1 class="heading">Yorumlar</h1>
         <div class="box-container">
             <div class="box">
-                <img class="alıntı" src="review-alıntı.png" alt="alıntı">
+                <img class="alıntı" src="images/review-alıntı.png" alt="alıntı">
                 <p>
                     Dürüm yapımındaki ustalığı ve lezzetleriyle gerçekten etkileyici bir işletme. Burada sunulan tüm malzemeler kaliteli ve taze, dürümler ise lezzetli ve doyurucu. Burada yediğim dürümlerden gerçekten keyif aldım ve bu işletmeyi herkese tavsiye ederim.
                 </p>
-                <img src="mehmet-yalçınkaya.jpg" class="user" alt="avatar1">
+                <img src="images/mehmet-yalçınkaya.jpg" class="user" alt="avatar1">
                 <h3>Mehmet Yalçınkaya</h3>
                     <div class="stars">
                     <i class="bi bi-star-fill"></i>
@@ -229,11 +270,11 @@
                 </div>
             </div>
             <div class="box">
-                <img class="alıntı" src="review-alıntı.png" alt="alıntı">
+                <img class="alıntı" src="images/review-alıntı.png" alt="alıntı">
                 <p>
                     Bu dürümcü, dürüm yapımında özenli bir yaklaşım sergiliyor ve sonuçlarından gurur duyuyorlar. Burada sunulan dürümler, taze malzemeler ve lezzetli soslarla doldurulmuş ve gerçek bir lezzet patlaması yaşatıyor. Burada yediğim dürüm, hayatım boyunca yediğim en iyi dürümlerden biriydi!
                 </p>
-                <img src="danilo-zanna.jpg" class="user" alt="avatar2">
+                <img src="images/danilo-zanna.jpg" class="user" alt="avatar2">
                 <h3>Danilo Zanna</h3>
                 <div class="stars">
                     <i class="bi bi-star-fill"></i>
@@ -244,10 +285,10 @@
                 </div>
             </div>
             <div class="box">
-                <img class="alıntı" src="review-alıntı.png" alt="alıntı">
+                <img class="alıntı" src="images/review-alıntı.png" alt="alıntı">
                 <p>
                     Bu dürümcü gerçekten özel bir yer. Burada sunulan dürümler, kaliteli malzemeler ve özenle hazırlanmış bir hamur ile hazırlanıyor. Burada yediğim dürüm gerçekten harika bir lezzete sahipti ve ben bu işletmeyi kesinlikle tekrar ziyaret edeceğim.</p>
-                <img src="somer-sivrioglu.jpg" class="user" alt="avatar3">
+                <img src="images/somer-sivrioglu.jpg" class="user" alt="avatar3">
                 <h3>Somer Sivrioğlu</h3>
                 <div class="stars">
                     <i class="bi bi-star-fill"></i>
@@ -259,11 +300,9 @@
             </div>
         </div>
     </section>
-
     <!-- REWİEW END -->
 
     <!-- CONTACT START -->
-
     <section class="contact">
         <h1 class="heading">İletişim</h1>
         <div class="row">
@@ -282,7 +321,7 @@
             </div>
             <div class="input-box">
                 <i class="bi bi-telephone-fill"></i>
-                <input type="number" placeholder="telefon numarası">
+                <input type="number" class="telephone" placeholder="telefon numarası">
             </div>
             <div>
                 <input type="submit" class="btn" value="İletişim Kur">
@@ -290,17 +329,15 @@
             </form>
         </div>
     </section>
-
     <!-- CONTACT END -->
 
     <!-- BLOG START -->
-
     <section class="blog">
         <h1 class="heading">BLOGS</h1>
         <div class="box-container">
             <div class="box">
                 <div class="image">
-                    <img src="taco-blog.jpg" alt="taco">
+                    <img src="images/taco-blog.jpg" alt="taco">
                 </div>
                 <div class="content">
                     <a href="#" class="title">Lezzetli Bir Taco Nasıl Yapılır? Çok Şaşıracaksınız</a>
@@ -312,7 +349,7 @@
             </div>
             <div class="box">
                 <div class="image">
-                    <img src="ızgara-blog.jpg" alt="ızgara">
+                    <img src="images/ızgara-blog.jpg" alt="ızgara">
                 </div>
                 <div class="content">
                     <a href="#" class="title">Herkesin Bilmesi Gereken İzgara Yapımı Püf Noktaları</a>
@@ -324,7 +361,7 @@
             </div>
             <div class="box">
                 <div class="image">
-                    <img src="patates-blog.jpg" alt="patates kızartması">
+                    <img src="images/patates-blog.jpg" alt="patates kızartması">
                 </div>
                 <div class="content">
                     <a href="#" class="title">Ünlü Şeflerden Lezzetli Bir Patates Kızartmasının Sırları:</a>
@@ -346,12 +383,12 @@
         </div>
         <div class="share">
                 <ul class="social-icons">
-                    <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
-                    <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
-                    <li><a href="" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
-                    <li><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
-                    <li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="" class="social-icon"> <i class="fa fa-github"></i></a></li>
+                    <li><a href="https://www.facebook.com/wraprestoran" target="_blank" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+                    <li><a href="" target="_blank" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/wraprestoran" target="_blank" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCtu05x-UutJAHzMRbC7ai-Q" target="_blank" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/wrap-restoran/" target="_blank" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="https://github.com/keremkdemir/wrap-restoran" target="_blank" class="social-icon"> <i class="fa fa-github"></i></a></li>
                 </ul>
         </div>
         <div class="end">
@@ -361,6 +398,10 @@
         </div>
     </section>
     <!-- FOOTER END -->
+
+    <!-- SCRİPT -->
+    <script src="js/script.js"></script>
+    <!-- SCRİPT -->
 
 </body>
 </html>
