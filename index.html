@@ -1,12 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- icon kütüphanesi start -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- icon kütüphanesi end -->
     <title>Wrap-Restaurant</title>
     <link rel="stylesheet" href="style.css">
 
@@ -24,20 +21,20 @@
             <a href="#">MENÜ</a>
             <a href="#">ÜRÜNLER</a>
             <a href="#">HAKKIMIZDA</a>
-            <a href="#">İLETİŞİM</a>
             <a href="#">YORUMLAR</a>
+            <a href="#">İLETİŞİM</a>
             <a href="#">BLOG</a>
         </nav>
         
         <div class="buttons">
             <button>
-                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="bi bi-search"></i>
             </button>
             <button>
-                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="bi bi-cart3"></i>
             </button>
-            <button>
-                <i class="fa-solid fa-bars"></i>
+            <button id="menu-btn">
+                <i class="bi bi-justify"></i>
             </button>
         </div>
 
@@ -87,9 +84,9 @@
 
                 <div class="box">
                 <div class="box-head">
-                    <img class="adana-durum" src="adana-durum.png" alt="menu">
+                    <img class="hatay-usulu" src="hatay-usulu.png" alt="menu">
                     <span class="menu-category">DÜRÜM</span>
-                    <h3>Adana Kebap Dürüm</h3>
+                    <h3>Hatay Dürüm</h3>
                     <div class="price">90₺<span>120₺</span></div>
                 </div>
                 <div class="box-bottom">
@@ -99,7 +96,7 @@
 
                 <div class="box">
                 <div class="box-head">
-                    <img src="urfa-durum.png" alt="menu">
+                    <img src="urfa.png" alt="menu">
                     <span class="menu-category">DÜRÜM</span>
                     <h3>Urfa Kebap Dürüm</h3>
                     <div class="price">90₺<span>120₺</span></div>
@@ -118,16 +115,252 @@
     <section class="products">
         <h1 class="heading">Ürünler</h1>
         <div class="box-container">
+
             <div class="box">
                 <div class="box-head">
-                    <span class="title"></span>
+                    <span class="title">Döner</span>
+                    <a href="#" class="name">Yarım Ekmek Döner</a>
+                </div>
+                <div class="image">
+                    <img class="yarim-ekmek" src="yarım-ekmek.png" alt="">
+                </div>
+                <div class="box-bottom">
+                    <div class="info">
+                        <b class="price">40₺</b>
+                        
+                    </div>
+                    <div class="product-btn">
+                        <a href="#">
+                            <i class="bi bi-plus"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box-head">
+                    <span class="title">Taco</span>
+                    <a href="#" class="name">Taco</a>
+                </div>
+                <div class="image">
+                    <img class="taco" src="taco.png" alt="">
+                </div>
+                <div class="box-bottom">
+                    <div class="info">
+                        <b class="price">80₺</b>
+                        
+                    </div>
+                    <div class="product-btn">
+                        <a href="#">
+                            <i class="bi bi-plus"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box-head">
+                    <span class="title">Sandviç</span>
+                    <a href="#" class="name">Karışık Sandviç</a>
+                </div>
+                <div class="image">
+                    <img class="karısık-sandvic" src="karısık-sandvic.png" alt="">
+                </div>
+                <div class="box-bottom">
+                    <div class="info">
+                        <b class="price">60₺</b>
+                        
+                    </div>
+                    <div class="product-btn">
+                        <a href="#">
+                            <i class="bi bi-plus"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- PRODUCTS END-->
+
+    <!-- ABOUT START -->
+
+    <section class="about">
+        <h1 class="heading">HAKKIMIZDA</h1>
+        <div class="row">
+            <div class="image">
+                <img src="deneme.jpg" alt="about">
+            </div>
+            <div class="content">
+                <h3>Dürümlerimiz Neden Bu Kadar Çok Seviliyor?</h3>
+                <p>   
+                        <span>Kaliteli Malzemeler:</span> Dürümlerimiz, yüksek kaliteli malzemeler kullanılarak hazırlanır. Taze, lezzetli ve sağlıklı malzemeler kullanarak, dürümlerimizin tadını ve kalitesini en üst seviyeye çıkarıyoruz.</p>
+                        <p>
+                        <span>Lezzetli Tarifler:</span> Dürümlerimiz, geleneksel ve modern tariflerin birleşimiyle hazırlanır. İşletmemiz, farklı damak zevklerine hitap eden lezzetli bir menü sunar. Kendine özgü lezzetlerimiz, müşterilerimizin tekrar tekrar bizi tercih etmesine neden olur.</p>
+                        <p>
+                        <span>Müşteri Memnuniyeti:</span> Müşteri memnuniyeti, işletmemiz için en önemli konulardan biridir. Müşterilerimizin geri bildirimlerine önem veriyor ve onların taleplerine hızlı bir şekilde yanıt veriyoruz. Böylece, müşterilerimizin beklentilerini her zaman aşmayı başarıyoruz.</p>
+                
+                <a href="#" class="btn">Daha Fazlası</a>
+            </div>
+        </div>
+
+        <hr>
+    </section>
+    <!-- ABOUT END -->
+
+    <!-- REWİEW START -->
+
+    <section class="review">
+        <h1 class="heading">Yorumlar</h1>
+        <div class="box-container">
+            <div class="box">
+                <img class="alıntı" src="review-alıntı.png" alt="alıntı">
+                <p>
+                    Dürüm yapımındaki ustalığı ve lezzetleriyle gerçekten etkileyici bir işletme. Burada sunulan tüm malzemeler kaliteli ve taze, dürümler ise lezzetli ve doyurucu. Burada yediğim dürümlerden gerçekten keyif aldım ve bu işletmeyi herkese tavsiye ederim.
+                </p>
+                <img src="mehmet-yalçınkaya.jpg" class="user" alt="avatar1">
+                <h3>Mehmet Yalçınkaya</h3>
+                    <div class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img class="alıntı" src="review-alıntı.png" alt="alıntı">
+                <p>
+                    Bu dürümcü, dürüm yapımında özenli bir yaklaşım sergiliyor ve sonuçlarından gurur duyuyorlar. Burada sunulan dürümler, taze malzemeler ve lezzetli soslarla doldurulmuş ve gerçek bir lezzet patlaması yaşatıyor. Burada yediğim dürüm, hayatım boyunca yediğim en iyi dürümlerden biriydi!
+                </p>
+                <img src="danilo-zanna.jpg" class="user" alt="avatar2">
+                <h3>Danilo Zanna</h3>
+                <div class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img class="alıntı" src="review-alıntı.png" alt="alıntı">
+                <p>
+                    Bu dürümcü gerçekten özel bir yer. Burada sunulan dürümler, kaliteli malzemeler ve özenle hazırlanmış bir hamur ile hazırlanıyor. Burada yediğim dürüm gerçekten harika bir lezzete sahipti ve ben bu işletmeyi kesinlikle tekrar ziyaret edeceğim.</p>
+                <img src="somer-sivrioglu.jpg" class="user" alt="avatar3">
+                <h3>Somer Sivrioğlu</h3>
+                <div class="stars">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- REWİEW END -->
 
-    <!-- PRODUCTS END-->
+    <!-- CONTACT START -->
+
+    <section class="contact">
+        <h1 class="heading">İletişim</h1>
+        <div class="row">
+            <iframe class="map" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96326.36823170485!2d28.705450145163514!3d41.020901885028344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab7479e3445e9%3A0x3147d142623c4438!2sInsider!5e0!3m2!1str!2str!4v1678534680453!5m2!1str!2str"  loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <form>
+            <h3>TEMASA GEÇ</h3>
+            <div class="input-box">
+                <i class="bi bi-person-fill"></i>
+                <input type="text" placeholder="isim">
+            </div>
+            <div class="input-box">
+                <i class="bi bi-envelope"></i>
+                <input type="email" placeholder="e-posta">
+            </div>
+            <div class="input-box">
+                <i class="bi bi-telephone-fill"></i>
+                <input type="number" placeholder="telefon numarası">
+            </div>
+            <div>
+                <input type="submit" class="btn" value="İletişim Kur">
+            </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- CONTACT END -->
+
+    <!-- BLOG START -->
+
+    <section class="blog">
+        <h1 class="heading">BLOGS</h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="taco-blog.jpg" alt="taco">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Lezzetli Bir Taco Nasıl Yapılır? Çok Şaşıracaksınız</a>
+                    <p>
+                        Lezzetli Tako Yapımı: Adım Adım Evde Tako Hazırlama Rehberi. Ünlü Şeflerin Tavsiyeleriyle
+                    </p>
+                    <a href="#" class="btn">Daha Fazlası</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="ızgara-blog.jpg" alt="ızgara">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Herkesin Bilmesi Gereken İzgara Yapımı Püf Noktaları</a>
+                    <p>
+                        Öğrenince şok olacağınız "bunu daha önce nasıl duymadım" diyeceğiniz ızgara sırları
+                    </p>
+                    <a href="#" class="btn">Daha Fazlası</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="patates-blog.jpg" alt="patates kızartması">
+                </div>
+                <div class="content">
+                    <a href="#" class="title">Ünlü Şeflerden Lezzetli Bir Patates Kızartmasının Sırları:</a>
+                    <p>
+                        Usta Şeflerimizin Yaptığı Patates Kızartmasının En Çok Sorulan Sırları
+                    </p>
+                    <a href="#" class="btn">Daha Fazlası</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- BLOG END -->
+
+    <!-- FOOTER START -->
+    <section class="footer">
+        <div class="search">
+            <input type="text" class="search-input" placeholder="Arama">
+            <button class="btn btn-primary">Ara</button>
+        </div>
+        <div class="share">
+                <ul class="social-icons">
+                    <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+                    <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+                    <li><a href="" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
+                    <li><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+                    <li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="" class="social-icon"> <i class="fa fa-github"></i></a></li>
+                </ul>
+        </div>
+        <div class="end">
+            <h3 class="hazirlayan">Kerem Karademir</h3>
+            <p> Bu proje Insider Code Academy 2023 için hazırlanmıştır.</p>
+            
+        </div>
+    </section>
+    <!-- FOOTER END -->
 
 </body>
 </html>
