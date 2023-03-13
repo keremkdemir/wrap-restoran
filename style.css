@@ -267,6 +267,16 @@ a{
 /* HOME END */
 
 /*MENU START*/
+
+.qrcode img{
+    position: relative;
+    margin: auto;
+    text-align: center;
+    width: 50rem;
+    margin-left: 60rem;
+    
+}
+
 .menu .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
